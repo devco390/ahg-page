@@ -1,5 +1,6 @@
 function HomePage() {
   const phone = "3222127114";
+  const phoneWhatsapp = "+57-322-2127114";
   return (
     <div>
       <div className="preloader">
@@ -110,22 +111,23 @@ function HomePage() {
                     data-wow-duration="1.5s"
                     data-wow-delay="1s"
                   >
-                    Your trusted
+                    Gestión Ambiental
                   </h4>
                   <h1
                     className="banner-title mt-10 wow fadeInUp"
                     data-wow-duration="1.5s"
                     data-wow-delay="2s"
                   >
-                    <span>Interior</span> Design Partner for Home or Office
+                    Diseño, ejecución y control de proyectos de ingeniería
                   </h1>
                   <a
-                    className="banner-contact mt-25 wow fadeInUp"
+                    className="main-btn banner-contact mt-25 wow fadeInUp"
                     data-wow-duration="1.5s"
                     data-wow-delay="2.3s"
-                    href="#contact"
+                    target="_blank"
+                    href={`https://api.whatsapp.com/send?phone=${phoneWhatsapp}`}
                   >
-                    Get a Free Quote
+                    !Contactanos ahora!
                   </a>
                 </div>
               </div>
@@ -163,23 +165,14 @@ function HomePage() {
                 <h4 className="about-welcome">Sobre nosotros </h4>
                 <h3 className="about-title mt-10">Razones para elegirnos</h3>
                 <p className="mt-25">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum passages
-                  <br /> <br />
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem Ipsum passages, and more recently with
-                  desktop publishing software like Aldus PageMaker including
-                  versions of Lorem Ipsum.
+                  Contamos con una planta permanente de profesionales integrada
+                  por geólogos, hidrogeólogos, geofísicos, geotecnistas,
+                  meteorólogos, topógrafos e ingenieros ambientales, sanitarios,
+                  civiles y profesionales en el área social conformando un
+                  equipo interdisciplinario con experiencia y capacitación
+                  especializada en el manejo y desarrollo de proyectos de
+                  ingeniería.
                 </p>
-                <a className="main-btn mt-25" href="#">
-                  learn more
-                </a>
               </div>
             </div>
           </div>
@@ -191,8 +184,8 @@ function HomePage() {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section-title text-center pb-20">
-                <h5 className="sub-title mb-15">Our Services</h5>
-                <h2 className="title">What We Do?</h2>
+                <h5 className="sub-title mb-15">Nuestros servicios</h5>
+                <h2 className="title">¿Qué hacemos?</h2>
               </div>
             </div>
           </div>
@@ -207,10 +200,30 @@ function HomePage() {
                   <i className="lni-paint-roller"></i>
                 </div>
                 <div className="services-content mt-15">
-                  <h4 className="services-title">Interior Design</h4>
+                  <h4 className="services-title">Hidrología</h4>
                   <p className="mt-20">
-                    Mauris aliquam, turpis sed mattis placerat, justo risus
-                    pellentesque quam, id finibus risus arcu eget neque.
+                    <ul>
+                      <li>
+                        Hidráulica de ríos y drenajes (Flujo y transporte).
+                      </li>
+                      <li>
+                        Análisis de eventos extremos (Sequías y crecientes).
+                      </li>
+                      <li>Estimación de caudal ecológico.</li>
+                      <li>Balances Hídricos.</li>
+                      <li>
+                        Modelación y simulación de cantidad y calidad de los
+                        recursos hídricos (Qual2K, HEC-RAS, HEC-HMS, Wasp
+                        Versión 8.3).
+                      </li>
+                      <li>Prueba de trazadores en cuerpos de agua.</li>
+                      <li>
+                        Diseño de estructuras hidráulicas para captación y
+                        conducción de agua, estabilización y protección de
+                        riveras.
+                      </li>
+                      <li>Oceanografía.</li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -225,10 +238,54 @@ function HomePage() {
                   <i className="lni-blackboard"></i>
                 </div>
                 <div className="services-content mt-15">
-                  <h4 className="services-title">Design Consultancy</h4>
+                  <h4 className="services-title">
+                    Exploración de aguas subterráneas
+                  </h4>
                   <p className="mt-20">
-                    Mauris aliquam, turpis sed mattis placerat, justo risus
-                    pellentesque quam, id finibus risus arcu eget neque.
+                    <ul>
+                      <li>
+                        Ejecución de inventarios de captaciones, puntos de agua
+                        y fuentes potenciales de contaminación.
+                      </li>
+                      <li>
+                        Exploración regional y local de aguas subterráneas
+                        (Exploración geológica, Hidrológica, Geofísica e
+                        Hidrogeológica).
+                      </li>
+                      <li>
+                        Planificación y desarrollo de aprovechamiento, manejo de
+                        recarga de acuíferos.
+                      </li>
+                      <li>Ejecución y análisis de Pruebas Hidráulicas.</li>
+                      <ul>
+                        <li>Pruebas de bombeo 24 Horas.</li>
+                        <li>Pruebas de bombeo Escalonadas.</li>
+                        <li>Slug Test.</li>
+                      </ul>
+                      <li>
+                        Modelación y simulación de aguas subterráneas
+                        (Modelación de Acuíferos).
+                      </li>
+                      <li>Monitoreo de calidad de agua.</li>
+                      <li>Diagnóstico, Mantenimiento y Limpieza de pozos.</li>
+                      <li>
+                        Asesoría e interventoría en construcción de pozos de
+                        extracción de agua.
+                      </li>
+                      <li>Piezómetros y pozos de monitoreo ambiental.</li>
+                      <li>Pozos exploratorios.</li>
+                      <li>Pozos de aprovechamiento de agua.</li>
+                      <li>Elaboración de perfil estratigráfico.</li>
+                      <li>Estudios de tomografías eléctricas al suelo.</li>
+                      <ul>
+                        <li>Tomografías-</li>
+                        <li>
+                          Registros eléctricos verticales SEV’s – Identificación
+                          de puntos estratégicos para la perforación de puntos
+                          de agua subterránea.
+                        </li>
+                      </ul>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -243,10 +300,15 @@ function HomePage() {
                   <i className="lni-home"></i>
                 </div>
                 <div className="services-content mt-15">
-                  <h4 className="services-title">Residential Design</h4>
+                  <h4 className="services-title">Hidrogeología</h4>
                   <p className="mt-20">
-                    Mauris aliquam, turpis sed mattis placerat, justo risus
-                    pellentesque quam, id finibus risus arcu eget neque.
+                    <ul>
+                      <li>Topobatimetrías.</li>
+                      <li>Levantamientos topográficos.</li>
+                      <li>Definición de linderos.</li>
+                      <li>Aforos con ADCP.</li>
+                      <li>Vuelos con DRON.</li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -261,10 +323,19 @@ function HomePage() {
                   <i className="lni-briefcase"></i>
                 </div>
                 <div className="services-content mt-15">
-                  <h4 className="services-title">Commercial Design</h4>
+                  <h4 className="services-title">Geotecnia</h4>
                   <p className="mt-20">
-                    Mauris aliquam, turpis sed mattis placerat, justo risus
-                    pellentesque quam, id finibus risus arcu eget neque.
+                    <ul>
+                      <li>Análisis interacción suelo-estructura.</li>
+                      <li>Estabilidad de Taludes, laderas y excavaciones.</li>
+                      <li>Evaluación y diseño de estructuras geotécnicas.</li>
+                      <li>Diseño de control de erosión y vegetación.</li>
+                      <li>Geotecnia vial.</li>
+                      <li>
+                        Reconocimiento geológico, geomorfológico y cartografía
+                        geológica.
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -279,10 +350,33 @@ function HomePage() {
                   <i className="lni-handshake"></i>
                 </div>
                 <div className="services-content mt-15">
-                  <h4 className="services-title">Hospitality Design</h4>
+                  <h4 className="services-title">Tramitología ambiental</h4>
                   <p className="mt-20">
-                    Mauris aliquam, turpis sed mattis placerat, justo risus
-                    pellentesque quam, id finibus risus arcu eget neque.
+                    <ul>
+                      <li>Ocupación de cauce y concesión de Aguas.</li>
+                      <li>
+                        Permiso de Prospección y Exploración de Aguas
+                        Subterráneas.
+                      </li>
+                      <li>Plan de uso eficiente y ahorro de agua – PUEAA.</li>
+                      <li>Permisos de vertimientos.</li>
+                      <li>Estudios de Impacto Ambiental – EIA.</li>
+                      <li>
+                        Planes de Manejo Ambiental – PMA y Vulnerabilidad para
+                        operaciones mineras, explotación de hidrocarburos, obras
+                        de infraestructura vial, rellenos sanitarios, plantas
+                        industriales, estaciones de servicio entre otros.
+                      </li>
+                      <li>Informes de cumplimiento ambiental – ICA.</li>
+                      <li>
+                        Plan de Saneamiento y Manejo de Vertimientos – PSMV.
+                      </li>
+                      <li>Permiso de emisiones de fuentes fijas.</li>
+                      <li>
+                        Asesoría en cumplimiento normativo y requerimientos de
+                        las autoridades ambientales.
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -297,10 +391,79 @@ function HomePage() {
                   <i className="lni-grow"></i>
                 </div>
                 <div className="services-content mt-15">
-                  <h4 className="services-title">Co-working Space Design</h4>
+                  <h4 className="services-title">Ingeniería ambiental</h4>
                   <p className="mt-20">
-                    Mauris aliquam, turpis sed mattis placerat, justo risus
-                    pellentesque quam, id finibus risus arcu eget neque.
+                    <ul>
+                      <li>Gerencia de Proyectos de ingeniería.</li>
+                      <li>
+                        Plan de remediación de suelos y agua subterránea
+                        (Diseño, ejecución, asesoría).
+                      </li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8">
+              <div
+                className="single-services text-center mt-30 wow fadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="1.2s"
+              >
+                <div className="services-icon">
+                  <i className="lni-grow"></i>
+                </div>
+                <div className="services-content mt-15">
+                  <h4 className="services-title">Servicios sociales</h4>
+                  <p className="mt-20">
+                    <ul>
+                      <li>
+                        Diseño e implementación de Programas de Educación
+                        Ambiental.
+                      </li>
+                      <li>Gestión social.</li>
+                      <li>
+                        Conformación de redes sociales de monitoreo del agua.
+                      </li>
+                      <li>Manejo conflictos socioambientales.</li>
+                      <li>
+                        Cartografía social para el diálogo de saberes
+                        territoriales.
+                      </li>
+                      <li>Estudios socioeconómicos.</li>
+                      <li>Consulta previa. </li>
+                      <li>
+                        Diseño de estrategias sociales de adaptación al cambio
+                        climático.
+                      </li>
+                      <li>Planeación y gestión del desarrollo.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8">
+              <div
+                className="single-services text-center mt-30 wow fadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="1.2s"
+              >
+                <div className="services-icon">
+                  <i className="lni-grow"></i>
+                </div>
+                <div className="services-content mt-15">
+                  <h4 className="services-title">
+                    Distribuidores de insumos y dispositivos médicos
+                  </h4>
+                  <p className="mt-20">
+                    <ul>
+                      <li>Alcohol al 76-96% Pureza – Alcohol glicerinado.</li>
+                      <li>Tapabocas Termosellados N95.</li>
+                      <li>Guantes de Látex y Nitrilo.</li>
+                      <li>Trajes de Bioseguridad.</li>
+                      <li>Mascaras de oxigeno con reservorio.</li>
+                      <li>Circuitos respiratorios.</li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -571,7 +734,7 @@ function HomePage() {
         <div
           className="map-bg bg_cover d-none d-lg-block"
           style={{
-            backgroundImage: "background-image: url(images/map/map-bg.jpg)",
+            backgroundImage: "url(images/map/map-bg.jpeg)",
           }}
         ></div>
       </section>
