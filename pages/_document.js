@@ -14,7 +14,7 @@ export default function Document() {
         />
 
         {/* <!--====== Title ======--> */}
-        <title>Interior - Interior Design and Architecture Web Template</title>
+        <title>AHG Group - Gestión Ambiental</title>
 
         {/* <!--====== Favicon Icon ======--> */}
         <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
