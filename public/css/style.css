@@ -1558,6 +1558,12 @@ p.form-message.error {
   font-size: 16px;
 }
 
+.footer-logo a {
+  line-height: 26px;
+  font-size: 16px;
+  color: #646464;
+}
+
 .footer-logo .footer-info li {
   margin-top: 20px;
 }
@@ -1571,7 +1577,6 @@ p.form-message.error {
 }
 .footer-logo .footer-info li .single-info .info-icon i {
   font-size: 18px;
-  color: .footer-logo .footer-info li .single-info .info-icon i theme-color;
 }
 .footer-logo .footer-info li .single-info .info-content {
   padding-left: 30px;

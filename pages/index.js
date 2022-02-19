@@ -1,5 +1,6 @@
 function HomePage() {
   const phone = "3222127114";
+  const phoneTwo = "3219494837";
   const phoneWhatsapp = "+57-322-2127114";
   return (
     <div>
@@ -477,8 +478,8 @@ function HomePage() {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section-title text-center pb-20">
-                <h5 className="sub-title mb-15">Meet The Team</h5>
-                <h2 className="title">Our Expert Designers</h2>
+                <h5 className="sub-title mb-15">Conoce el equipo</h5>
+                <h2 className="title">Nuestros Expertos</h2>
               </div>
             </div>
           </div>
@@ -494,9 +495,43 @@ function HomePage() {
                 </div>
                 <div className="team-content">
                   <h4 className="team-name">
-                    <a href="#">Rob Hope</a>
+                    <a href="#">Lyna Buitrago</a>
                   </h4>
-                  <span className="sub-title">CEO & Founder</span>
+                  <span className="sub-title">CEO</span>
+                  <ul className="social mt-25">
+                    <li>
+                      <a href="#">
+                        <i className="lni-facebook-filled"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="lni-twitter-original"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="lni-linkedin-original"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-6 col-sm-6">
+              <div
+                className="single-team text-center mt-30 wow fadeInUp"
+                data-wow-duration="1.5s"
+                data-wow-delay="0.4s"
+              >
+                <div className="team-image">
+                  <img src="images/team/team-1.jpg" alt="Team" />
+                </div>
+                <div className="team-content">
+                  <h4 className="team-name">
+                    <a href="#">Santiago Ledesma Mira</a>
+                  </h4>
+                  <span className="sub-title">Ingeniero de proyectos</span>
                   <ul className="social mt-25">
                     <li>
                       <a href="#">
@@ -528,9 +563,9 @@ function HomePage() {
                 </div>
                 <div className="team-content">
                   <h4 className="team-name">
-                    <a href="#">Patric Green</a>
+                    <a href="#">Andrés F. Delgado Q.</a>
                   </h4>
-                  <span className="sub-title">Chief Designer</span>
+                  <span className="sub-title">Ingeniero de proyectos</span>
                   <ul className="social mt-25">
                     <li>
                       <a href="#">
@@ -562,9 +597,9 @@ function HomePage() {
                 </div>
                 <div className="team-content">
                   <h4 className="team-name">
-                    <a href="#">Daryl Dixon</a>
+                    <a href="#">Carlos Cortes Gómez</a>
                   </h4>
-                  <span className="sub-title">Consultant</span>
+                  <span className="sub-title">Ingeniero de proyectos</span>
                   <ul className="social mt-25">
                     <li>
                       <a href="#">
@@ -596,9 +631,9 @@ function HomePage() {
                 </div>
                 <div className="team-content">
                   <h4 className="team-name">
-                    <a href="#">Mark Parker</a>
+                    <a href="#">Adriana García Gutiérrez</a>
                   </h4>
-                  <span className="sub-title">Intern</span>
+                  <span className="sub-title">Ingeniera de proyectos</span>
                   <ul className="social mt-25">
                     <li>
                       <a href="#">
@@ -628,8 +663,8 @@ function HomePage() {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section-title text-center pb-20">
-                <h5 className="sub-title mb-15">Contact us</h5>
-                <h2 className="title">Get In touch</h2>
+                <h5 className="sub-title mb-15">Contáctanos</h5>
+                <h2 className="title">Consulta con nosotros</h2>
               </div>
             </div>
           </div>
@@ -648,8 +683,8 @@ function HomePage() {
                         <input
                           type="text"
                           name="name"
-                          placeholder="Your Name"
-                          data-error="Name is required."
+                          placeholder="Nombre"
+                          data-error="Nombre es requerido."
                           required="required"
                         />
                         <div className="help-block with-errors"></div>
@@ -660,8 +695,8 @@ function HomePage() {
                         <input
                           type="email"
                           name="email"
-                          placeholder="Your Email"
-                          data-error="Valid email is required."
+                          placeholder="Correo electrónico"
+                          data-error="Correo electrónico es requerido."
                           required="required"
                         />
                         <div className="help-block with-errors"></div>
@@ -672,8 +707,8 @@ function HomePage() {
                         <input
                           type="text"
                           name="subject"
-                          placeholder="Subject"
-                          data-error="Subject is required."
+                          placeholder="Asunto"
+                          data-error="Asunto es requerido."
                           required="required"
                         />
                         <div className="help-block with-errors"></div>
@@ -684,8 +719,8 @@ function HomePage() {
                         <input
                           type="text"
                           name="phone"
-                          placeholder="Phone"
-                          data-error="Phone is required."
+                          placeholder="Teléfono"
+                          data-error="Teléfono es requerido."
                           required="required"
                         />
                         <div className="help-block with-errors"></div>
@@ -694,9 +729,9 @@ function HomePage() {
                     <div className="col-md-12">
                       <div className="single-form form-group">
                         <textarea
-                          placeholder="Your Mesaage"
+                          placeholder="Mensaje"
                           name="message"
-                          data-error="Please,leave us a message."
+                          data-error="Por favor. déjanos tu mensaje."
                           required="required"
                         ></textarea>
                         <div className="help-block with-errors"></div>
@@ -706,7 +741,7 @@ function HomePage() {
                     <div className="col-md-12">
                       <div className="single-form form-group text-center">
                         <button type="submit" className="main-btn">
-                          send message
+                          Enviar mensaje
                         </button>
                       </div>
                     </div>
@@ -723,7 +758,7 @@ function HomePage() {
           <div className="gmap_canvas">
             <iframe
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8033489358954!2d-74.10912918517934!3d4.6291452435626566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b909adf0a41%3A0xb88e32089049f390!2zQ3JhLiA1MiAjIzE0LTQwLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1645297641145!5m2!1ses-419!2sco"
               frameBorder="0"
               scrolling="no"
               marginHeight="0"
@@ -755,7 +790,8 @@ function HomePage() {
                           <i className="lni-phone-handset"></i>
                         </div>
                         <div className="info-content">
-                          <p>+1880 123 456 789</p>
+                          <a href={`tel:${phone}`}> 322 212 71 14</a> /{" "}
+                          <a href={`tel:${phone}`}> 322 212 71 14</a>
                         </div>
                       </div>
                     </li>
@@ -765,7 +801,12 @@ function HomePage() {
                           <i className="lni-envelope"></i>
                         </div>
                         <div className="info-content">
-                          <p>contact@yourmail.com</p>
+                          <a
+                            href="mailto:ahg.hidrogeologos@gmail.com"
+                            target="_blank"
+                          >
+                            ahg.hidrogeologos@gmail.com
+                          </a>
                         </div>
                       </div>
                     </li>
@@ -775,7 +816,13 @@ function HomePage() {
                           <i className="lni-map"></i>
                         </div>
                         <div className="info-content">
-                          <p>1234 Avenue New York, US</p>
+                          <a
+                            target="_blank"
+                            href="https://www.google.com/maps/place/Cra.+52+%23%2314-40,+Bogot%C3%A1/@4.6291452,-74.1091292,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9b909adf0a41:0xb88e32089049f390!8m2!3d4.6291399!4d-74.1069405"
+                          >
+                            Carrera 52 # 14 - 40, Puente Aranda, Bogotá,
+                            Colombia
+                          </a>
                         </div>
                       </div>
                     </li>
@@ -802,6 +849,17 @@ function HomePage() {
                       </a>
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="copyright text-center">
+                  <p>Copyright 2022 by AHG Group.</p>
                 </div>
               </div>
             </div>
