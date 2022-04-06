@@ -808,9 +808,17 @@ p {
   color: #1d71b8;
   text-transform: uppercase;
 }
+.header-banner .banner-content .sub-title span {
+  font-size: 18px;
+  color: #1d71b8;
+  text-transform: uppercase;
+}
 @media (max-width: 767px) {
   .header-banner .banner-content .sub-title {
     font-size: 18px;
+  }
+  .header-banner .banner-content .sub-title span {
+    font-size: 14px;
   }
 }
 .header-banner .banner-content .banner-title {
@@ -1715,4 +1723,60 @@ p.form-message.error {
 .back-to-top:hover {
   color: #1d71b8;
   background-color: #fff;
+}
+
+.banner-title {
+  position: relative;
+  height: 120px;
+  min-height: 120px;
+}
+
+.banner-title span {
+  color: #121619 !important;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.slide {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+}
+
+.banner-title--animation .slide-1 {
+  animation: slider-fade-in 2s 0s forwards;
+}
+.banner-title--animation .slide-2 {
+  animation: slider-fade-in 2s 2s forwards;
+}
+.banner-title--animation .slide-3 {
+  animation: slider-fade-in 2s 4s forwards;
+}
+.banner-title--animation .slide-4 {
+  animation: slider-fade-in 2s 6s forwards;
+}
+.banner-title--animation .slide-5 {
+  animation: slider-fade-in 2s 8s forwards;
+}
+.banner-title--animation .slide-6 {
+  animation: slider-fade-in 2s 10s forwards;
+}
+.banner-title--animation .slide-7 {
+  animation: slider-fade-in 2s 12s forwards;
+}
+
+@keyframes slider-fade-in {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slider-final {
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,7 +1,20 @@
+import { useEffect, useState, useRef } from "react";
+
 function HomePage() {
   const phone = "3222127114";
   const phoneTwo = "3219494837";
   const phoneWhatsapp = "+57-322-2127114";
+  const [isAnimation, setIsAnimation] = useState(true);
+  const parentAnimation = useRef();
+
+  useEffect(() => {
+    var animationRunInterval = window.setInterval(() => {
+      parentAnimation.current.classList.remove("banner-title--animation");
+      void parentAnimation.current.offsetWidth;
+      parentAnimation.current.classList.add("banner-title--animation");
+    }, 14000);
+    return () => clearInterval(animationRunInterval);
+  }, []);
   return (
     <div>
       <div className="preloader">
@@ -23,18 +36,18 @@ function HomePage() {
 
       <header id="home" className="header-area pt-100">
         <div className="shape header-shape-one">
-          <img src="images/banner/shape/shape-1.svg" alt="shape" />
+          <img src="images/banner/shape/shape-3.svg" alt="shape" />
         </div>
 
         <div className="shape header-shape-tow animation-one">
-          <img src="images/banner/shape/shape-2.svg" alt="shape" />
+          <img src="images/banner/shape/shape-3.svg" alt="shape" />
         </div>
 
         <div className="shape header-shape-three animation-one">
           <img src="images/banner/shape/shape-3.svg" alt="shape" />
         </div>
         <div className="shape header-shape-fore">
-          <img src="images/banner/shape/shape-4.svg" alt="shape" />
+          <img src="images/banner/shape/shape-3.svg" alt="shape" />
         </div>
 
         <div className="navigation-bar">
@@ -76,7 +89,7 @@ function HomePage() {
                       </li>
                       <li className="nav-item">
                         <a className="page-scroll" href="#service">
-                          Servicios
+                          Unidades de negocio
                         </a>
                       </li>
                       <li className="nav-item">
@@ -112,15 +125,26 @@ function HomePage() {
                     data-wow-duration="1.5s"
                     data-wow-delay="1s"
                   >
-                    Gestión Ambiental
+                    <span>Somos más que una</span>
+                    <br />
+                    consultoría ambiental
                   </h4>
+
                   <h1
-                    className="banner-title mt-10 wow fadeInUp"
+                    className={`banner-title banner-title--animation mt-10 wow fadeInUp`}
+                    ref={parentAnimation}
                     data-wow-duration="1.5s"
                     data-wow-delay="2s"
                   >
-                    Diseño, ejecución y control de proyectos de ingeniería
+                    <span className="slide slide-1">Hidrología</span>
+                    <span className="slide slide-2">Hidrogeología</span>
+                    <span className="slide slide-3">Aguas subterráneas</span>
+                    <span className="slide slide-4">Geotecnia</span>
+                    <span className="slide slide-5">Tramitología</span>
+                    <span className="slide slide-6">Ingeniería Ambiental</span>
+                    <span className="slide slide-7">Topografía</span>
                   </h1>
+
                   <a
                     className="main-btn banner-contact mt-25 wow fadeInUp"
                     data-wow-duration="1.5s"
@@ -128,7 +152,7 @@ function HomePage() {
                     target="_blank"
                     href={`https://api.whatsapp.com/send?phone=${phoneWhatsapp}`}
                   >
-                    !Contactanos ahora!
+                    !Asesórate ahora!
                   </a>
                 </div>
               </div>
@@ -185,7 +209,7 @@ function HomePage() {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section-title text-center pb-20">
-                <h5 className="sub-title mb-15">Nuestros servicios</h5>
+                <h5 className="sub-title mb-15">Unidades de negocio</h5>
                 <h2 className="title">¿Qué hacemos?</h2>
               </div>
             </div>
@@ -855,10 +879,10 @@ function HomePage() {
           </div>
         </div>
         <div className="copyright-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="copyright text-center">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="copyright text-center">
                   <p>Copyright 2022 by AHG Group.</p>
                 </div>
               </div>
