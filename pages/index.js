@@ -4,16 +4,28 @@ function HomePage() {
   const phone = "3222127114";
   const phoneTwo = "3219494837";
   const phoneWhatsapp = "+57-322-2127114";
-  const [isAnimation, setIsAnimation] = useState(true);
   const parentAnimation = useRef();
 
-  useEffect(() => {
-    var animationRunInterval = window.setInterval(() => {
-      parentAnimation.current.classList.remove("banner-title--animation");
-      void parentAnimation.current.offsetWidth;
-      parentAnimation.current.classList.add("banner-title--animation");
+  const toogleAnimationClass = () => {
+    parentAnimation.current.classList.remove("banner-title--animation--init");
+    parentAnimation.current.classList.remove("banner-title--animation");
+    parentAnimation.current.offsetWidth;
+    parentAnimation.current.classList.add("banner-title--animation");
+  };
+
+  const runAnimation = () => {
+    toogleAnimationClass();
+    const animationRunInterval = window.setInterval(() => {
+      toogleAnimationClass();
     }, 14000);
-    return () => clearInterval(animationRunInterval);
+  };
+
+  useEffect(() => {
+    const animationInitTimeout = window.setTimeout(() => {
+      runAnimation();
+      clearTimeout(animationInitTimeout);
+    }, 16000);
+    return () => clearTimeout(animationInitTimeout);
   }, []);
   return (
     <div>
@@ -131,7 +143,7 @@ function HomePage() {
                   </h4>
 
                   <h1
-                    className={`banner-title banner-title--animation mt-10 wow fadeInUp`}
+                    className={`banner-title banner-title--animation--init mt-10 wow fadeInUp`}
                     ref={parentAnimation}
                     data-wow-duration="1.5s"
                     data-wow-delay="2s"

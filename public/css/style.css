@@ -1745,6 +1745,28 @@ p.form-message.error {
   top: 0;
 }
 
+.banner-title--animation--init .slide-1 {
+  animation: slider-fade-in 2s 2s forwards;
+}
+.banner-title--animation--init .slide-2 {
+  animation: slider-fade-in 2s 4s forwards;
+}
+.banner-title--animation--init .slide-3 {
+  animation: slider-fade-in 2s 6s forwards;
+}
+.banner-title--animation--init .slide-4 {
+  animation: slider-fade-in 2s 8s forwards;
+}
+.banner-title--animation--init .slide-5 {
+  animation: slider-fade-in 2s 10s forwards;
+}
+.banner-title--animation--init .slide-6 {
+  animation: slider-fade-in 2s 12s forwards;
+}
+.banner-title--animation--init .slide-7 {
+  animation: slider-fade-in 2s 14s forwards;
+}
+
 .banner-title--animation .slide-1 {
   animation: slider-fade-in 2s 0s forwards;
 }
